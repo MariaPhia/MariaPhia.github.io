@@ -27,6 +27,7 @@ export default class ProductCard extends React.Component {
 				}}>
 					<div style={{ flex: 5 }} />
 					<h4 style={{
+    					textDecoration: "none",
 						fontFamily: Theme.Fonts.Family.heading,
 						fontWeight: Theme.Fonts.Weight.h1,
 						fontSize: Theme.Sizes.Typographies.h4,

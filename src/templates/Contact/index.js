@@ -11,6 +11,7 @@ const style = {
   display: "grid",
   justifyContent: "center",
   alignItems: "center",
+  overflowX: "hidden"
 };
 
 const containerStyle = {

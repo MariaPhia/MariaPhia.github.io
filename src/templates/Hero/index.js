@@ -5,7 +5,7 @@ import Theme from "../../theme";
 const style = {
   backgroundColor: Theme.Colors.backgroundLight,
   width: "100%",
-  height: "100vh",
+  minHeight: "100vh",
   display: "grid",
   justifyContent: "center",
   alignItems: "center",

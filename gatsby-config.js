@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    siteUrl: `https://albgarciam.github.com`,
+    title: `MariaPhia`,
+    siteUrl: `https://mariaphia.github.com`,
   },
   plugins: [
     "gatsby-plugin-image",
