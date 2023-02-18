@@ -15,38 +15,45 @@ export default class LandingPage extends React.Component {
     return (
       <main style={mainStyles}>
         <TopNavigationBar />
-        <Hero title={`Estamos<br/>para<br/>ayudarte`}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        <Hero title={`MP<br/>Consultoría de<br/>RRHH`}
+          description=""
           linkTitle="Contactar"
           linkRoute="#contacto" />
 
         <Products
           title={"Especializados en relaciones"}
           sectionTitle={"Nuestros servicios"}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Especializados en servicios de RRHH, tanto para empresas como para personas que deseen llegar al siguiente nivel."
           linkTitle="Contactar"
           linkRoute="#contacto">
           <ProductCard
-            title="Hello world"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+            title="Selección de Personal"
+            description="Realizamos criba de candidatos, estructuramos y gestionamos informes sobre los perfiles de los puestos de trabajo, la selección y el 'onboarding' respectivo para tu empresa." />
           <ProductCard
             style={{ backgroundColor: Theme.Colors.brand }}
-            title="Hello world"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+            title="Diagnósticos Organizacionales"
+            description="Analizamos y detectamos tus puntos de mejora organizacionales para poder trabajar sobre ellos hacia una conversión a oportunidades." />
+          <ProductCard
+            title="Desarrollo de Talento"
+            description="Te acompañamos en el proceso de gestionar y potenciar tus capacidades con el objetivo de obtener mayor éxito en tu vida profesional." />
+          <ProductCard
+            style={{ backgroundColor: Theme.Colors.brand }}
+            title="Talleres de Habilidades Blandas"
+            description="Te ayudamos a potenciar el talento de tu equipo, a través de talleres especializados en base a las necesidades de tu empresa." />
         </Products>
 
         <Contact
           title={"¿Necesitas contactarnos?"}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+          description="Prestamos servicios presenciales en la Comunidad de Madrid.">
           <ProductCard
-            title="636 62 72 71"
+            title="602 565 226"
             description="Teléfono móvil"
-            onClick={e => { navigate("tel://689717646") }} />
+            onClick={e => { navigate("tel://602565226") }} />
           <ProductCard
             style={{ backgroundColor: Theme.Colors.brandDark }}
-            title="sample@mail.com"
+            title="mariaphiacalderontejada@gmail.com"
             description="Correo electrónico" 
-            onClick={e => { navigate("mailto:sample@mail.com") }} />
+            onClick={e => { navigate("mailto:mariaphiacalderontejada@gmail.com") }} />
         </Contact>
         <BottomNavigationBar />
       </main>

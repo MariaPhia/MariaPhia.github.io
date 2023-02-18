@@ -51,9 +51,8 @@ export default class Hero extends React.Component {
   }
 
   render() {
-    const isMobile = this.state.width < 1020
-    const flexDirection = isMobile ? "column" : "row-reverse"
-    const alignItems = isMobile ? "flex-start" : "center"
+    const flexDirection = "column"
+    const alignItems = "flex-start"
     let array = this.props.title.split("<br/>")
     let views = []
     for (let index = 0; index < array.length; index++) {
@@ -66,7 +65,6 @@ export default class Hero extends React.Component {
         <div style={{...containerStyle, flexDirection, alignItems}}>
           <div style={{flex: "1.25"}}>{ views }</div>
           <div style={{...paragraphContainer, flex: "1"}}>
-              <p>{this.props.description}</p>
               <LinkButton text={this.props.linkTitle} route={this.props.linkRoute} />
           </div>
         </div>
