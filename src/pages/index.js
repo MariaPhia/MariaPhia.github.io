@@ -3,6 +3,7 @@ import { BottomNavigationBar, ProductCard, TopNavigationBar } from "../molecules
 import { Contact, Hero, Products } from "../templates";
 import { navigate } from "gatsby";
 import Theme from "../theme"
+import { Helmet } from 'react-helmet';
 
 const mainStyles = {
   backgroundColor: Theme.Colors.backgroundSecondary,
@@ -14,6 +15,9 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <main style={mainStyles}>
+        <Helmet>
+          <title>Inicio | MPConsultoría</title>
+        </Helmet>
         <TopNavigationBar />
         <Hero title={`MP<br/>Consultoría de<br/>RRHH`}
           description=""
