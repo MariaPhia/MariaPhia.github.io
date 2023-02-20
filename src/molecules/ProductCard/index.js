@@ -32,6 +32,7 @@ export default class ProductCard extends React.Component {
 						fontWeight: Theme.Fonts.Weight.h1,
 						fontSize: Theme.Sizes.Typographies.h4,
 						color: Theme.Colors.textLightPrimary,
+						wordBreak: "break-word",
 						margin: 0
 					}}>{this.props.title}</h4>
 					<p style={{
@@ -39,6 +40,7 @@ export default class ProductCard extends React.Component {
 						fontWeight: Theme.Fonts.Weight.p,
 						fontSize: Theme.Sizes.Typographies.p,
 						color: Theme.Colors.textLightSecondary,
+						wordBreak: "break-word",
 						margin: 0
 					}}>{this.props.description}</p>
 				</div>

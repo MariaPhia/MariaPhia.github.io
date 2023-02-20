@@ -47,7 +47,6 @@ export default class Contact extends React.Component {
   render() {
     const isMobile = this.state.width < 1020
     const flexDirection = isMobile ? "column" : "row"
-    const alignItems = "center"
 
     return (
       <div id="contacto" style={style}>
@@ -55,7 +54,7 @@ export default class Contact extends React.Component {
           style={{ ...iconStyle }}
           src={logo}
         />
-        <div style={{ ...containerStyle, flexDirection, alignItems }}>
+        <div style={{ ...containerStyle, flexDirection }}>
           <div style={{ 
             display: "flex",
             alignItems: "flex-start",
